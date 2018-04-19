@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- display_marker.html -->
+<html>
+<head>
+    <title>Google Maps API最初の一歩</title>
+    <meta charset="utf-8">
+
+    <!-- ちゃんと等倍で表示しましょうよ．スマホ側で勝手に倍率変えんなよ，という意味 -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- この中身は後からJavaScriptでも変更可能だったりする -->
+
+    <!-- Google Maps APIをWeb上から読んでくる -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>　
+    　
+
+    <!-- 自分で作ったJSファイル -->
+    <script type="text/javascript" src="js/googlemap.js"></script>
+    <script type="text/javascript" src="js/googlemapanother.js"></script>
+  <link rel="stylesheet" href="css/googlemap.css">
+
+</head>
+<body>
+    <img class ="kyoto" src="img/water.gif">
+    <div class ="place">
+      <h1>京都×水</h1>
+      <img class="water3" src="img/water3.jpg">
+    </div>
+  <!-- bodyの中には地図表示用のマップ一つだけ -->
+    <div class="place">
+      <h2>Map</h2>
+      <div id="map"></div>
+    </div>
+
+    <div class = "place" id="togetu" >
+      <h2>渡月橋</h2>
+      <div class = "slide">
+          <img class ="img" src="img/togetu.jpg">
+          <div class ="s1" class ="off">
+            <img class ="arrow" src="img/arrow.png">
+            <div class ="dif">
+              <h3>渡月橋</h3>
+              <p>嵐山というとまず頭に浮かぶのが渡月橋の風景である。平安の初期に亀山上皇が「くまなき月の渡るに似る」と感想を洩らしたことから「渡月橋」と呼ばれるようになった。橋の長さは１５５ｍある。</p>
+              <p>嵐山公園内の展望台から一望できる。人気も少なく、山や川が朝日を浴びて輝く午前中がおすすめ</p>
+              <h4>Access</h4>
+              <p>Address:京都府京都市右京区</p>
+              <p>Time:無休</p>
+              <p>Price:無料</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class = "place" id="simogamo">
+    <h2>下鴨神社</h2>
+    <div class = "slide">
+      <img class = "img" src="img/simogamo.jpg">
+      <div class ="s2" class ="off">
+        <img class ="arrow" src="img/arrow.png">
+        <div class ="dif">
+          <h3>下鴨神社</h3>
+          <p>祭神は勝利導きの神である賀茂建角身命と安産の神である玉依媛命で、正式名は賀茂御祖神社。</p>
+          <p>御手洗池の近くでは、水につけると結果が出てくる水みくじを引くことができる。</p>
+          <h4>Access</h4>
+          <p>Tel:0755-781-0010</p>
+          <p>Address:京都市左京区下鴨泉川町５９</p>
+          <p>Time:夏季：5:30-18:00　冬季：6:30-17:00　大炊殿他10:00-16:00/無休</p>
+          <p>Web:http://www.shimogamo-jinja.or.jp/</p>
+          <p>Price:無料</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "place" id="mitui">
+    <h2>旧三井家下鴨別邸</h2>
+    <div class = "slide">
+      <img class = "img" src="img/mitui.jpg">
+      <div class ="s3" class ="off">
+        <img class = "arrow" src = "img/arrow.png">
+          <div class = "dif">
+            <h3>旧三井家下鴨別邸</h3>
+            <p>三井家の先祖を祀る社が下鴨にあったことから、休憩所として築かれた。</p>
+            <p>客間からは大正ガラス越しに庭を一望でき、いつもとは少し違った世界を楽しむことができる。</p>
+            <h4>Access</h4>
+            <p>Tel:0755-366-4321</p>
+            <p>Address:京都市左京区下鴨宮河町58番地2</p>
+            <p>Time:9:00-17:00(受付：~16:30)　/休：水曜、12/29~31</p>
+            <p>Web:https://www.kyokanko.or.jp/mitsuike/</p>
+            <p>Price:410円</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class = "place" id = "ginkaku">
+    <h2>東山慈照寺（銀閣寺）</h2>
+    <div class = "slide">
+      <img class = "img" src = "img/ginkaku.jpg">
+      <div class ="s4" class = "off">
+        <img class = "arrow" src= "img/arrow.png">
+        <div class = "dif">
+          <h3>銀閣寺</h3>
+          <p>室町幕府８代将軍の足利義政が、３代目将軍の義満の金閣寺をならって建設した山荘。東山田が前身で義政の遺言により寺となった。</p>
+          <p>金箔をあしらえた華やかな金閣寺とは異なり、侘びさびの世界を表現した銀閣寺は静かな気品が感じられる。</p>
+          <p>石や木々に囲まれ池に映し出さた観音殿は落ち着いた美しさがあった。</p>
+          <h4>Access</h4>
+          <p>Tel:075-771-5725</p>
+          <p>Address:京都市左京区銀閣寺町２</p>
+          <p>Time:8:30-17:00(12~２月　9:30-16:30)/無休</p>
+          <p>Web:http://www.shokoku-ji.jp/g_sanpai.html</p>
+          <p>Price:500円</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "place" id = "byoudouin">
+    <h2>平等院鳳凰堂</h2>
+    <div class = "slide">
+      <img class = "img" src = "img/byoudouin.jpg">
+      <div class ="s5" class = "off">
+        <img class = "arrow" src = "img/arrow.png">
+        <div class = "dif">
+          <h3>銀閣寺</h3>
+          <p>１０円玉硬貨で知られる国宝の「鳳凰堂」の前には池を配した庭園（史跡・名勝）があるが、創建当初は宇治川や、対岸の山並みを取り入れて、西方極楽浄土を現したものといわれ、各地の寺院造営に影響を与えた。
+          </p>
+          <p>朱色を基調にし、左右対称に建てられた鳳凰堂が水面にも対象に映し出される様子は、厳かな雰囲気を醸し出している。</p>
+          <h4>Access</h4>
+          <p>Tel:0774-21-2861</p>
+          <p>Address: 京都府宇治市宇治蓮華116</p>
+          <p>Time:8:30-17:30(受付：~17:15),鳳翔館：9:00-17:00(受付：~16:45)/無休</p>
+          <p>Web:https://www.byodoin.or.jp/</p>
+          <p>Price:庭園・鳳翔館：600円/鳳凰堂：別途300円</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

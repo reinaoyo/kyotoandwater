@@ -1,0 +1,168 @@
+html, body {
+    text-align:center;
+    background-color: #ffffff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+#map {
+    /*a8afa0
+     div id=mapになってるdiv
+     ここに地図
+     高さ500ピクセル，幅は上位のdiv(ここではbody)の50%
+    */
+    height: 500px;
+    width: 100%;
+
+}
+.kyoto {
+  width: 100vw;
+  height:auto;
+}
+h1{
+  margin-top: 300px;
+  margin-bottom: 300px;
+  font-size: 30pt;
+  color:#000000;
+  text-align: center;
+}
+h2{
+  margin-top: 20%;
+  margin-bottom: 20%;
+  font-size: 30pt;
+  color:#000000;
+  text-align: center;
+}
+
+
+.water3{
+  width: 80vw;
+  height:auto;
+}
+.button{
+  display: none;
+  position:absolute;
+  top:320px;
+  left:50%;
+}
+
+.img{
+  z-index: 2;
+  width: 100vw;
+  height: auto;
+}
+.place{
+  position:relative;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mini{
+  width: auto;
+  max-height: 100px;
+}
+.slide{
+  position: relative;
+}
+
+.s1 {
+  cursor: pointer;
+  z-index: 99;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;/*fixed;*/
+  top: 10%;
+  right: -95%;
+  background-color: #1e5176;
+  width: 100%;
+  height:80%;
+}
+.s2 {
+  cursor: pointer;
+  z-index: 99;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;/*fixed;*/
+  top: 10%;
+  right: -95%;
+  background-color: #1e5176;
+  width: 100%;
+  height:80%;
+}
+.s3 {
+  cursor: pointer;
+  z-index: 99;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;/*fixed;*/
+  top: 10%;
+  right: -95%;
+  background-color: #1e5176;
+  width: 100%;
+  height:80%;
+}
+.s4 {
+  cursor: pointer;
+  z-index: 99;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;/*fixed;*/
+  top: 10%;
+  right: -95%;
+  background-color: #1e5176;
+  width: 100%;
+  height:80%;
+}
+.s5 {
+  cursor: pointer;
+  z-index: 99;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;/*fixed;*/
+  top: 10%;
+  right: -95%;
+  background-color: #1e5176;
+  width: 100%;
+  height:80%;
+}
+
+.arrow{
+  z-index: 100;
+  position: absolute;
+  left:2%;
+  top:50%;
+}
+
+.dif{
+  text-align: center;
+  margin: 10%;
+  position: relative;
+  left:20%;
+  width:600px;
+  height:50%; 
+
+}
+
+h3{
+  font-size: 36pt;
+  color:#ffffff;
+  margin-top: 10%;
+  margin-bottom:5%;
+}
+h4{
+  font-size: 20pt;
+  color:#ffffff;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.slide p{
+  color: #ffffff;
+  font-size: 16px;
+  margin: 2%;
+
+}
